@@ -2,7 +2,7 @@
 https://d29x1m54y1sqot.cloudfront.net
 
 ## GitHub Repository
-https://uwek17.github.io/uwekremer_portfolio
+https://uwek17.github.io/uwekremerportfolio
 
 ## Tech Stack
 - HTML
