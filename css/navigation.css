@@ -2,3 +2,12 @@
     display: flex;
     gap: 1.5rem;
 }
+
+.navigation a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.navigation a:hover {
+    color: var(--color-accent);
+}
