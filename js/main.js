@@ -1,9 +1,14 @@
-import { renderHeader } from "./components/header.js";
+import { renderNavigation } from "./modules/navigation.js";
+import { renderFooter } from "./modules/footer.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-    const headerPlaceholder = document.getElementById("header-placeholder");
+    const header = document.getElementById("header");
+    const footer = document.getElementById("footer");
     
-    if (headerPlaceholder) {
-        headerPlaceholder.innerHTML = renderHeader();
+    if (header) {
+        header.innerHTML = renderNavigation();
+    }
+    if (footer) {
+        footer.innerHTML = renderFooter();
     }
 });
