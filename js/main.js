@@ -1,6 +1,8 @@
 import { renderNavigation } from "./modules/navigation.js";
 import { renderFooter } from "./modules/footer.js";
 import { initContactForm } from "./modules/contactForm.js";
+import { initScrollAnimations} from "./modules/scrollAnimations.js";
+import { initLebenslauf } from "./pages/lebenslauf.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const header = document.getElementById("header");
@@ -12,6 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (footer) {
         footer.innerHTML = renderFooter();
     }
+    if(document.body.dataset.page === "lebenslauf") {
+        initLebenslauf();
+    }
 
     initContactForm();
+    initScrollAnimations();
 });
