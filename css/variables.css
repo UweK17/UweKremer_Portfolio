@@ -2,6 +2,15 @@
     --color-bg: #0f172a;
     --color-text: #e5e7eb;
     --color-accent: #38bdf8;
+    --card: #1e293b;
+    --accent: #38bdf8;
 
     --max-width: 1100px;
+}
+
+[data-theme="light"] {
+    --color-bg: #f8fafc;
+    --color-text: #0f172a;
+    --card: #ffffff;
+    --accent: #0ea5e9;
 }

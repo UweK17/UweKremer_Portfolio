@@ -7,6 +7,8 @@ export function renderNavigation() {
       <a href="privates.html">Privates</a>
       <a href="arbeitsproben.html">Arbeitsproben</a>
       <a href="motivation.html">Motivation</a>
+      
+      <button id="theme-toggle">🌙</button>
     </nav>
     `;
 }

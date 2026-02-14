@@ -3,6 +3,7 @@ import { renderFooter } from "./modules/footer.js";
 import { initContactForm } from "./modules/contactForm.js";
 import { initScrollAnimations} from "./modules/scrollAnimations.js";
 import { initLebenslauf } from "./pages/lebenslauf.js";
+import { initThemeToggle } from "./modules/theme.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const header = document.getElementById("header");
@@ -20,4 +21,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     initContactForm();
     initScrollAnimations();
+    initThemeToggle();
 });
