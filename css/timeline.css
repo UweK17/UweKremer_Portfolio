@@ -2,6 +2,7 @@
     position: relative;
     margin: 3rem 0;
     padding-left: 2rem;
+    width: 95%;
 }
 
 .timeline::before {
@@ -39,5 +40,6 @@
 }
 
 .timeline-item:hover .timeline-content {
-    transform: translateY(10px);
+    transform: translateY(10px) translateX(10px);
+    box-shadow: -10px 10px 20px -10px var(--color-accent);
 }
