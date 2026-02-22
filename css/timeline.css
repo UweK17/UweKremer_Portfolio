@@ -43,3 +43,44 @@
     transform: translateY(10px) translateX(10px);
     box-shadow: -10px 10px 20px -10px var(--color-accent);
 }
+
+.timeline-item:hover .timeline-dot {
+    transform: scale(1.3);
+    background: var(--color-accent);
+}
+
+.collapsible .collapse-body {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.3s ease;
+}
+
+.collapsible.active .collapse-body {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 1rem;
+}
+
+.collapsible.active .timeline-dot {
+    transform: scale(1.3);
+    background: var(--color-accent);
+}
+
+.collapsible .timeline-content::after {
+    content: 'Klicken zum Öffnen';
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    opacity: 0.6;
+    transition: 0.3s ease;
+    width: fit-content;
+    padding: 5px;
+    border: 1px solid var(--color-accent);
+    border-radius: 10px;
+}
+
+.collapsible.active .timeline-content::after {
+    content: 'Klicken zum Schließen';
+    opacity: 1;
+}

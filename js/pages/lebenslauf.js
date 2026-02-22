@@ -7,8 +7,21 @@ export function initTimeline() {
 
     items.forEach((item) => {
         item.addEventListener('click', () => {
-            item.classList.toggle('active');
-            console.log("Timeline-Item angeklickt: ", item.dataset.title);
+            if(item.classList.contains('collapsible')) {
+
+                const collapsibles = document.querySelectorAll('.timeline-item.collapsible');
+                const isActive = item.classList.contains('active');
+
+                collapsibles.forEach((collapsible) => {
+                    collapsible.classList.remove('active');
+                });
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            } else {
+                item.classList.toggle('active');
+            }
         });
     });
 };
+

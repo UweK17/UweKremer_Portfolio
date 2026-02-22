@@ -5,6 +5,7 @@ import { initScrollAnimations} from "./modules/scrollAnimations.js";
 import { initLebenslauf } from "./pages/lebenslauf.js";
 import { initThemeToggle } from "./modules/theme.js";
 import { initSkills } from "./modules/skills.js";
+import { initFotoImage } from "./modules/foto.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const header = document.getElementById("header");
@@ -25,4 +26,5 @@ document.addEventListener("DOMContentLoaded", () => {
     initScrollAnimations();
     initThemeToggle();
     initSkills();
+    initFotoImage();
 });
