@@ -10,28 +10,11 @@ export function renderFooter() {
 
                 <div class="footer-contact">
                     <h4>Contact Me</h4>
-                    <form id="contract-form" novalidate>
-                        
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                            
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                            
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                        </div>
-
-                        <!-- Spam_Schutz -->
-                        <div class="hidden-field">
-                            <input type="text" name="trapField" tabindex="-1" autocomplete="off">
-                        </div>
-
-                        <button type="submit">Send Message</button>
-                        <p class="form-status"></p>
-
+                    <form action="mailto:uwekremer1971@gmx.de" method="post" enctype="text/plain">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="E-Mail" required>
+                        <textarea name="message" placeholder="Nachricht" required></textarea>
+                        <button type="submit">E-Mail senden</button>
                     </form>
                 </div>
             </div>

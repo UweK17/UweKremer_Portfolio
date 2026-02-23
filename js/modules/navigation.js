@@ -4,9 +4,9 @@ export function renderNavigation() {
       <a href="index.html">Start</a>
       
       <a href="lebenslauf.html">Beruflicher Werdegang</a>
-      <a href="privates.html">Schule und Privates</a>
+      <a href="privates.html">Qualifikation</a>
       <a href="arbeitsproben.html">Arbeitsproben</a>
-      <a href="motivation.html">Motivation</a>
+      <a href="motivation.html">Profil</a>
       
       <button id="theme-toggle">🌙</button>
     </nav>
