@@ -5,7 +5,7 @@ export function renderFooter() {
 
                 <div class="footer-brand">
                     <h3>Uwe Kremer</h3>
-                    <p>Frontend Developer  · JavaScript · HTML · CSS</p>
+                    <p>Frontend Developer  · JavaScript · HTML · CSS · PHP · Python</p>
                 </div>
 
                 <div class="footer-contact">
