@@ -10,3 +10,5 @@ https://uwek17.github.io/uwekremerportfolio
 - JavaScript
 - AWS S3
 - AWS CloudFront
+- PHP
+- Python

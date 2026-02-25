@@ -3,11 +3,18 @@ export function renderFooter() {
         <footer class="footer">
             <div class="footer-container">
 
-                <div class="footer-brand">
-                    <h3>Uwe Kremer</h3>
-                    <p>Frontend Developer  · JavaScript · HTML · CSS · PHP · Python</p>
-                </div>
+                <div class="footer-left">
+                    <div class="footer-brand">
+                        <h3>Uwe Kremer</h3>
+                        <p>Frontend Developer · JavaScript · HTML · CSS · PHP · Python</p>
+                    </div>
 
+                    <div class="footer-legal">
+                        <a href="impressum.html" target="_blank">Impressum</a> |
+                        <a href="datenschutz.html" target="_blank">Datenschutz</a>
+                    </div>
+                </div>
+                
                 <div class="footer-contact">
                     <h4>Contact Me</h4>
                     <form action="mailto:uwekremer1971@gmx.de" method="post" enctype="text/plain">
@@ -26,18 +33,3 @@ export function renderFooter() {
         </footer>
     `;
 }
-
-/*export function renderFooter() {
-    return `
-    
-        <section class="contact">
-            <h2>Contact Me</h2>
-            <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
-            <ul>
-                <li>Email: <a href="mailto:uwekremer1971@gmx.de">uwekremer1971@gmx.de</a></li>
-            </ul>
-        </section>
-
-    <p>© ${new Date().getFullYear()} Uwe Kremer. Alle Rechte vorbehalten.</p>
-    `;
-}*/
