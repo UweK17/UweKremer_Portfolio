@@ -6,6 +6,7 @@ import { initLebenslauf } from "./pages/lebenslauf.js";
 import { initThemeToggle } from "./modules/theme.js";
 import { initSkills } from "./modules/skills.js";
 import { initFotoImage } from "./modules/foto.js";
+import { renderEmail } from "./modules/email.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const header = document.getElementById("header");
@@ -27,4 +28,5 @@ document.addEventListener("DOMContentLoaded", () => {
     initThemeToggle();
     initSkills();
     initFotoImage();
+    renderEmail();
 });

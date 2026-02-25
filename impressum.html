@@ -8,26 +8,28 @@
 </head>
 <body>
 
-<h1>Impressum</h1>
+  <h1>Impressum</h1>
 
-<p><strong>Angaben gemäß § 5 TMG</strong></p>
+  <p><strong>Angaben gemäß § 5 TMG</strong></p>
 
-<p>
-Uwe Kremer<br>
-Werlandstr. 70<br>
-48153 Münster<br>
-Deutschland
-</p>
+  <p>
+  Uwe Kremer<br>
+  Werlandstr. 70<br>
+  48153 Münster<br>
+  Deutschland
+  </p>
 
-<p>
-E-Mail: uwekremer1971@gmx.de
-</p>
+  <p>E-Mail: <span id="email"></span></p>
 
-<p>
-Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
-Uwe Kremer<br>
-Anschrift wie oben
-</p>
-
+  <p>
+  Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
+  Uwe Kremer<br>
+  Anschrift wie oben
+  </p>
+  <script type="module">
+      import { renderEmail } from "./js/modules/email.js";
+      renderEmail();
+  </script>
 </body>
 </html>
+
