@@ -18,7 +18,7 @@ export function renderFooter() {
                 
                 <div class="footer-contact">
                     <h4>Contact Me</h4>
-                    <form action="https://formspree.io/f/test" target="_blank" method="POST">
+                    <form action="https://formspree.io/f/xrearjkg" target="_blank" method="POST">
                         <input type="text" name="name" placeholder="Name" required>
                         <input type="email" name="email" placeholder="E-Mail" required>
                         <textarea name="message" placeholder="Nachricht" required></textarea>
