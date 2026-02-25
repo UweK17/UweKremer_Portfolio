@@ -1,9 +1,5 @@
 export function renderFooter() {
 
-    const user = "uwekremer1971";
-    const domain = "gmx.de";
-    const email = `<a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
-
     return `
         <footer class="footer">
             <div class="footer-container">
@@ -22,7 +18,7 @@ export function renderFooter() {
                 
                 <div class="footer-contact">
                     <h4>Contact Me</h4>
-                    <form action="mailto:${user}@${domain}" method="post" enctype="text/plain">
+                    <form action="https://formspree.io/f/test" target="_blank" method="POST">
                         <input type="text" name="name" placeholder="Name" required>
                         <input type="email" name="email" placeholder="E-Mail" required>
                         <textarea name="message" placeholder="Nachricht" required></textarea>
@@ -37,4 +33,14 @@ export function renderFooter() {
 
         </footer>
     `;
+};
+
+export function renderEmail() {
+    const user = "uwekremer1971";
+    const domain = "gmx.de";
+
+    const emailSpan = document.getElementById('email');
+    if (emailSpan) {
+        emailSpan.innerHTML = `<a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
+    }
 }
