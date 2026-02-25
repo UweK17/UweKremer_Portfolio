@@ -15,20 +15,37 @@ body  {
 }
 
 .content {
-    max-width: var(--max-width);
-    margin: 2rem;
-    padding: 1rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
     align-items: flex-start;
 }
 
+.introduction p {
+    max-width: 650px;
+    line-height: 1.6;
+}
+
 .main-left { 
-    flex: 2;
+    flex: 1.2;
+    min-width: 0;
 }
 
 .main-right {
     flex: 1;
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .main-right {
+        order: -1; /* Bild oben auf Mobile */
+    }
 }
